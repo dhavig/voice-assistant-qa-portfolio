@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AssistMe Demo</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Voice Assistant QA Demo</p>
+        <h1>AssistMe</h1>
+        <p class="lede">
+          A lightweight prototype for testing reminder, weather, calendar, and timer
+          flows with ambiguity, fallback, and customer-impact scenarios in mind.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Try Sample Utterances</h2>
+          <button id="clearBtn" type="button">Clear</button>
+        </div>
+
+        <div class="sample-list">
+          <button class="sample" type="button">Remind me later</button>
+          <button class="sample" type="button">What's the weather in Pittsburgh?</button>
+          <button class="sample" type="button">How about tomorrow?</button>
+          <button class="sample" type="button">Set a reminder for lunch</button>
+          <button class="sample" type="button">Set two timers for five minutes</button>
+          <button class="sample" type="button">Schedule dinner with Sam next Friday</button>
+        </div>
+
+        <label class="prompt" for="utterance">Utterance</label>
+        <textarea id="utterance" rows="3" placeholder="Type a command to simulate assistant behavior..."></textarea>
+        <button id="runBtn" class="primary" type="button">Run Simulation</button>
+
+        <div class="output-grid">
+          <article class="card">
+            <h3>Assistant Response</h3>
+            <p id="response">No simulation run yet.</p>
+          </article>
+          <article class="card">
+            <h3>QA Notes</h3>
+            <ul id="qaNotes">
+              <li>Use the sample utterances or type your own.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Risk Level</h3>
+            <p id="risk">N/A</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
