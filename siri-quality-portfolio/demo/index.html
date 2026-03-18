@@ -15,6 +15,20 @@
           A lightweight prototype for testing reminder, weather, calendar, and timer
           flows with ambiguity, fallback, and customer-impact scenarios in mind.
         </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-label">Coverage Areas</span>
+            <strong>4 Core Flows</strong>
+          </div>
+          <div class="stat">
+            <span class="stat-label">QA Focus</span>
+            <strong>Exploratory + Adversarial</strong>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Platforms</span>
+            <strong>iPhone / iPad</strong>
+          </div>
+        </div>
       </section>
 
       <section class="panel">
@@ -30,6 +44,10 @@
           <button class="sample" type="button">Set a reminder for lunch</button>
           <button class="sample" type="button">Set two timers for five minutes</button>
           <button class="sample" type="button">Schedule dinner with Sam next Friday</button>
+          <button class="sample" type="button">Add lunch with Maya tomorrow at 1</button>
+          <button class="sample" type="button">Why isn't my calendar working?</button>
+          <button class="sample" type="button">Book a table for four tonight</button>
+          <button class="sample" type="button">What's the weather with no internet?</button>
         </div>
 
         <label class="prompt" for="utterance">Utterance</label>
@@ -50,6 +68,21 @@
           <article class="card">
             <h3>Risk Level</h3>
             <p id="risk">N/A</p>
+            <div class="risk-badge" id="riskBadge">Not evaluated</div>
+          </article>
+          <article class="card">
+            <h3>Likely Issue Theme</h3>
+            <p id="issueTheme">No issue theme yet.</p>
+          </article>
+          <article class="card">
+            <h3>Release Impact</h3>
+            <p id="releaseImpact">No release recommendation yet.</p>
+          </article>
+          <article class="card">
+            <h3>Recommended Follow-Up Tests</h3>
+            <ul id="followUpTests">
+              <li>Run a sample scenario to see suggested next checks.</li>
+            </ul>
           </article>
         </div>
       </section>
